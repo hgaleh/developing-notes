@@ -9,6 +9,19 @@ function App() {
         <Profile></Profile>
         <div className={styles['post-list']}>
           <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
+          <PostDetail></PostDetail>
         </div>
       </div>
     </div>

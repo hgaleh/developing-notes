@@ -1,6 +1,6 @@
 import styles from './app.module.scss';
 import { Profile } from './profile/profile';
-import { Post } from './post/post';
+import { PostDetail } from './post-detail/post-detail';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className={styles['page-content']}>
         <Profile></Profile>
         <div className={styles['post-list']}>
-          <Post></Post>
+          <PostDetail></PostDetail>
         </div>
       </div>
     </div>

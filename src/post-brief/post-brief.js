@@ -1,6 +1,6 @@
-import styles from './post-detail.module.scss';
+import styles from './post-brief.module.scss';
 
-export const PostDetail = () => {
+export const PostBrief = () => {
     return <div className={styles.postDetail}>
         <div className={styles.header}>
             <div className={styles.headerLeft}>

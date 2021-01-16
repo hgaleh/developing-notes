@@ -1,6 +1,6 @@
 import styles from './app.module.scss';
 import { Profile } from './profile/profile';
-import { PostDetail } from './post-detail/post-detail';
+import { PostBrief } from './post-brief/post-brief';
 import { Footer } from './footer/footer';
 
 function App() {
@@ -9,20 +9,20 @@ function App() {
       <div className={styles['page-content']}>
         <Profile></Profile>
         <div className={styles['post-list']}>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
-          <PostDetail></PostDetail>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
+          <PostBrief></PostBrief>
         </div>
       </div>
       <Footer></Footer>

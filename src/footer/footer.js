@@ -9,20 +9,20 @@ export const Footer = () => {
     return <footer>
         <div className={styles.footerContainer}>
             <nav>
-                <a>Home</a>
-                <a>Reading List</a>
-                <a>Listings</a>
-                <a>Podcasts</a>
-                <a>Videos</a>
-                <a>Tags</a>
-                <a>Code of Conduct</a>
-                <a>FAQ</a>
-                <a>DEV</a>
-                <a>Shop</a>
-                <a>Sponsors</a>
-                <a>About</a>
-                <a>Privacy Policy</a>
-                <a>Terms of use Contact</a>
+                <a href="https://twitter.com/hgaleh">Home</a>
+                <a href="https://twitter.com/hgaleh">Reading List</a>
+                <a href="https://twitter.com/hgaleh">Listings</a>
+                <a href="https://twitter.com/hgaleh">Podcasts</a>
+                <a href="https://twitter.com/hgaleh">Videos</a>
+                <a href="https://twitter.com/hgaleh">Tags</a>
+                <a href="https://twitter.com/hgaleh">Code of Conduct</a>
+                <a href="https://twitter.com/hgaleh">FAQ</a>
+                <a href="https://twitter.com/hgaleh">DEV</a>
+                <a href="https://twitter.com/hgaleh">Shop</a>
+                <a href="https://twitter.com/hgaleh">Sponsors</a>
+                <a href="https://twitter.com/hgaleh">About</a>
+                <a href="https://twitter.com/hgaleh">Privacy Policy</a>
+                <a href="https://twitter.com/hgaleh">Terms of use Contact</a>
                 <div>
                     <ClickableIcon href="https://twitter.com/hgaleh">
                         <TwitterIcon></TwitterIcon>

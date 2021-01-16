@@ -1,6 +1,7 @@
 import styles from './post-brief.module.scss';
+import { Link } from 'react-router-dom';
 
-export const PostBrief = () => {
+export const PostBrief = (props) => {
     return <div className={styles.postDetail}>
         <div className={styles.header}>
             <div className={styles.headerLeft}>
@@ -17,9 +18,9 @@ export const PostBrief = () => {
         </div>
         <div className={styles.body}>
             <h3 className={styles.title}>
-                <a href="https://github.com/hgaleh">
+                <Link to={`/detail/${props.id}`}>
                     Changing sate before saving to the database in Rails
-                </a>
+                </Link>
             </h3>
             <p className={styles.brief}>
                 Changing sate before saving to the database in RailsChanging

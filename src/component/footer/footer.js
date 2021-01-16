@@ -4,12 +4,13 @@ import { GithubIcon } from '../svg/github-icon';
 import { InstagramIcon } from '../svg/instagram-icon';
 import { TwitterIcon } from '../svg/twitter-icon';
 import styles from './footer.module.scss';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return <footer>
         <div className={styles.footerContainer}>
             <nav>
-                <a href="https://twitter.com/hgaleh">Home</a>
+                <Link to="/">Home</Link>
                 <a href="https://twitter.com/hgaleh">Reading List</a>
                 <a href="https://twitter.com/hgaleh">Listings</a>
                 <a href="https://twitter.com/hgaleh">Podcasts</a>

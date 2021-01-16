@@ -4,11 +4,11 @@ export const PostDetail = () => {
     return <div className={styles.postDetail}>
         <div className={styles.header}>
             <div className={styles.headerLeft}>
-                <img src="./profile-photo.jpeg" alt="rwparrish profile"></img>
+                <img src="./profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile"></img>
             </div>
             <div className={styles.headerRight}>
                 <div className={styles.writerName}>
-                    rwparrish
+                    Hojjat Bakhtiyari
                 </div>
                 <div className={styles.publishDate}>
                     Jan 9
@@ -17,7 +17,7 @@ export const PostDetail = () => {
         </div>
         <div className={styles.body}>
             <h3 className={styles.title}>
-                <a href="#">
+                <a href="https://github.com/hgaleh">
                     Changing sate before saving to the database in Rails
                 </a>
             </h3>

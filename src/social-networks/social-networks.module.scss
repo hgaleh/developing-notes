@@ -2,8 +2,17 @@
     span {
         display: inline-flex;
         margin-left: 18px;
-        svg {
-            margin-right: 10px;
+
+        a, a:visited, a:active {
+            color: var(--link-color-secondary);
+
+            &:hover {
+                color: var(--link-color-hover);
+            }
+
+            svg {
+                margin-right: 10px;
+            }
         }
     }
 

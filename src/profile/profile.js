@@ -5,7 +5,7 @@ export const Profile = () => {
     return <div className={styles.profile}>
     <div className={styles['profile-top']}>
       <div className={styles['profile-photo']}>
-        <img src="./profile-photo.jpeg" alt="rwparrish profile">
+        <img src="./profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile">
         </img>
       </div>
       <div className={styles['follow-me']}>
@@ -13,9 +13,9 @@ export const Profile = () => {
       </div>
     </div>
     <div className={styles['profile-middle']}>
-      <div className={styles['my-name']}>rwparrish</div>
+      <div className={styles['my-name']}>Hojjat Bakhtiyari</div>
       <div className={styles['comment']}>
-        To code or not to code, that is the ternary.
+        Frontend | Angular | React Developer
       </div>
       <div className={styles['social-networks']}>
         <SocialNetworks></SocialNetworks>
@@ -24,7 +24,7 @@ export const Profile = () => {
     <div className={styles['profile-bottom']}>
         <div>Work</div>
         <div>
-          Full-Stack Software Engineer
+          Frontend developer at National Iranian Copper Industries Co.
         </div>
     </div>
   </div>

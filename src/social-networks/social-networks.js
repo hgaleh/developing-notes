@@ -8,7 +8,7 @@ export const SocialNetworks = () => {
     return <div className={styles['social-network']}>
         <span>
             <LocationIcon></LocationIcon>
-            Colorado Springs, CO
+            Tehran, Iran
         </span>
         <span>
             <CakeIcon></CakeIcon>
@@ -16,10 +16,10 @@ export const SocialNetworks = () => {
             <time dateTime="2020-08-23T02:33:50Z">Aug 23, 2020</time>
         </span>
         <span>
-            <a href="https://github.com/rwparrish" target="_blank" rel="noreferrer">
+            <a href="https://github.com/hgaleh" target="_blank" rel="noreferrer">
                 <GithubIcon></GithubIcon>
             </a>
-            <a href="https://www.linkedin.com/in/rwparrish/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/hojjatollah-bakhtiyari-kiya-391009100/" target="_blank" rel="noreferrer">
                 <LinkedinIcon></LinkedinIcon>
             </a>
         </span>

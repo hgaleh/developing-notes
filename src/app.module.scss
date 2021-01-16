@@ -17,10 +17,4 @@ html {
     min-height: 100vh;
     background: linear-gradient(180deg, var(--profile-brand-color) var(--su-10), #0d1219 var(--su-10));
     padding-top: var(--layout-padding);
-
-    .page-content {
-        width: 100%;
-        max-width: var(--site-width);
-        margin: 0 auto;
-    }
 }

@@ -1,30 +1,13 @@
 import styles from './app.module.scss';
-import { Profile } from './profile/profile';
-import { PostBrief } from './post-brief/post-brief';
-import { Footer } from './footer/footer';
+import { Footer } from './component/footer/footer';
+// import { Switch } from 'react-router-dom';
+import { Home } from './page/home/home';
+// import { Route, Router } from 'react-router-dom';
 
 function App() {
   return (
     <div className={styles['app-container']}>
-      <div className={styles['page-content']}>
-        <Profile></Profile>
-        <div className={styles['post-list']}>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-          <PostBrief></PostBrief>
-        </div>
-      </div>
+      <Home></Home>
       <Footer></Footer>
     </div>
   );

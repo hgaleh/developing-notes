@@ -1,13 +1,13 @@
-import './app.scss';
+import styles from './app.module.scss';
 import { Profile } from './profile/profile';
 import { Post } from './post/post';
 
 function App() {
   return (
-    <div className="app-container">
-      <div className="page-content">
+    <div className={styles['app-container']}>
+      <div className={styles['page-content']}>
         <Profile></Profile>
-        <div className="post-list">
+        <div className={styles['post-list']}>
           <Post></Post>
         </div>
       </div>

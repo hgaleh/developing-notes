@@ -1,0 +1,38 @@
+footer {
+    user-select: none;
+    --footer-color: var(--base-70);
+    background: var(--footer-bg);
+    padding: var(--su-8);
+
+    .footerContainer {
+        margin: auto;
+        width: 100%;
+        max-width: 768px;
+
+        nav {
+            font-size: var(--fs-base);
+            font-family: var(--ff-sans-serif);
+            text-align: center;
+
+            a {
+                color: var(--link-color);
+                display: inline-block !important;
+                padding: var(--su-2) !important;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+
+        hr {
+            border-top: 1px solid var(--footer-color);
+            opacity: 0.15;
+            width: 20%;
+        }
+
+        .copyright {
+            color: var(--footer-color);
+            font-size: var(--fs-s) !important;
+            text-align: center;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import styles from './app.module.scss';
 import { Profile } from './profile/profile';
 import { PostDetail } from './post-detail/post-detail';
+import { Footer } from './footer/footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <PostDetail></PostDetail>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

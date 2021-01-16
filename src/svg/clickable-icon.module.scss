@@ -1,0 +1,7 @@
+.clickable, .clickable:visited, .clickable:active {
+    color: var(--link-color-secondary);
+
+    &:hover {
+        color: var(--link-color-hover);
+    }
+}

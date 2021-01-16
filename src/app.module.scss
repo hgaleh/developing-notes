@@ -13,7 +13,8 @@ html {
 
 .app-container {
 
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background: linear-gradient(180deg, var(--profile-brand-color) var(--su-10), #0d1219 var(--su-10));
     padding-top: var(--layout-padding);
 

@@ -12,19 +12,17 @@ import { PostDetail } from './page/post-detail/post-detail';
 
 function App() {
   return (
-    <div className={styles['app-container']}>
-      <Router>
-        <Switch>
-          <Route path="/detail/:postId">
-            <PostDetail></PostDetail>
-          </Route>
-          <Route path="/">
-            <Home></Home>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/detail/:postId">
+          <PostDetail></PostDetail>
+        </Route>
+        <Route path="/">
+          <Home></Home>
+        </Route>
+      </Switch>
+      <Footer></Footer>
+    </Router>
   );
 }
 

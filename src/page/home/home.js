@@ -3,7 +3,8 @@ import { PostBrief } from '../../component/post-brief/post-brief';
 import styles from './home.module.scss';
 
 export const Home = () => {
-    return <div className={styles['page-content']}>
+    return <div className={styles['app-container']}>
+    <div className={styles['page-content']}>
         <Profile></Profile>
         <div className={styles['post-list']}>
           <PostBrief id="1"></PostBrief>
@@ -22,4 +23,5 @@ export const Home = () => {
           <PostBrief id="14"></PostBrief>
         </div>
       </div>
+    </div>
 }

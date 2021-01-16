@@ -1,0 +1,13 @@
+.social-network {
+    span {
+        display: inline-flex;
+        margin-left: 18px;
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    span:last-child {
+        margin-right: 5px;
+    }
+}

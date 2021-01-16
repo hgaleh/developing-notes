@@ -1,7 +1,7 @@
 .social-network {
     span {
         display: inline-flex;
-        margin-left: 18px;
+        margin-left: 24px;
 
         a, a:visited, a:active {
             color: var(--link-color-secondary);
@@ -9,10 +9,10 @@
             &:hover {
                 color: var(--link-color-hover);
             }
+        }
 
-            svg {
-                margin-right: 10px;
-            }
+        svg {
+            margin-right: 10px;
         }
     }
 

@@ -1,8 +1,0 @@
-.title, .title:active, .title:visited {
-    color: var(--card-color);
-    text-decoration: none;
-    color: inherit;
-    &:hover {
-        color: attr(data-hover-color);
-    }
-}

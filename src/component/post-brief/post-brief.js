@@ -1,5 +1,6 @@
 import styles from './post-brief.module.scss';
 import { HoverableLink } from '../hoverable/hoverable-link';
+import { HoverColor } from '../hoverable/hover-color';
 
 export const PostBrief = (props) => {
     return <div className={styles.postDetail}>
@@ -8,12 +9,16 @@ export const PostBrief = (props) => {
                 <img src="./profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile"></img>
             </div>
             <div className={styles.headerRight}>
-                <div className={styles.writerName}>
-                    Hojjat Bakhtiyari
-                </div>
-                <div className={styles.publishDate}>
-                    Jan 9
-                </div>
+                <HoverableLink href={'/detail/1'} hoverColor={HoverColor.white}>
+                    <div className={styles.writerName}>
+                        Hojjat Bakhtiyari
+                    </div>
+                </HoverableLink>
+                <HoverableLink href={'/detail/1'} hoverColor={HoverColor.white}>
+                    <div className={styles.publishDate}>
+                        Jan 9
+                    </div>
+                </HoverableLink>
             </div>
         </div>
         <div className={styles.body}>

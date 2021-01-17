@@ -31,10 +31,6 @@
                 text-decoration: none;
                 line-height: var(--lh-tight);
                 font-size: var(--fs-s);
-
-                &:hover {
-                    color: var(--card-color);
-                }
             }
 
             .publishDate {

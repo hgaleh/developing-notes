@@ -3,7 +3,7 @@
     box-shadow: 0 0 0 1px var(--card-border);
     display: flex;
     flex-direction: column;
-    background-color: #1a2634;
+    background-color: var(--base-10);
     user-select: none;
 
 
@@ -12,7 +12,7 @@
         justify-content: center;
         position: relative;
 
-        @media (max-width: 640px) {
+        @media (max-width: var(--sm)) {
             & {
                 justify-content: start;
             }
@@ -26,7 +26,7 @@
             background-color: var(--profile-brand-color);
             border-radius: 100%;
 
-            @media (max-width: 640px) {
+            @media (max-width: var(--sm)) {
                 & {
                     position: absolute;
                     padding: 5px;

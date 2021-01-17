@@ -1,6 +1,7 @@
 .title, .title:active, .title:visited {
     text-decoration: none;
-    *:hover {
+
+    & > *:hover {
         color: inherit !important;
     }
 }

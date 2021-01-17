@@ -1,0 +1,16 @@
+.headerClass {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    .innerContainer {
+        width: var(--site-width);
+        margin: auto;
+
+        .buttonIcon {
+            color: var(--base-100);
+            background-color: var(--bg);
+        }
+    }
+}

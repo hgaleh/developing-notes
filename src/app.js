@@ -7,11 +7,13 @@ import {
   Route
 } from 'react-router-dom';
 import { PostDetail } from './page/post-detail/post-detail';
+import { Header } from './component/header/header';
 
 
 function App() {
   return (
     <Router>
+      <Header></Header>
       <Switch>
         <Route path="/detail/:postId">
           <PostDetail></PostDetail>

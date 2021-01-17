@@ -12,7 +12,7 @@
         justify-content: center;
         position: relative;
 
-        @media (max-width: var(--sm)) {
+        @media (max-width: 640px) {
             & {
                 justify-content: start;
             }
@@ -26,7 +26,7 @@
             background-color: var(--profile-brand-color);
             border-radius: 100%;
 
-            @media (max-width: var(--sm)) {
+            @media (max-width: 640px) {
                 & {
                     position: absolute;
                     padding: 5px;

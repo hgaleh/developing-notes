@@ -1,5 +1,5 @@
 import styles from './post-brief.module.scss';
-import { Link } from 'react-router-dom';
+import { HoverableLink } from '../hoverable/hoverable-link';
 
 export const PostBrief = (props) => {
     return <div className={styles.postDetail}>
@@ -18,9 +18,9 @@ export const PostBrief = (props) => {
         </div>
         <div className={styles.body}>
             <h3 className={styles.title}>
-                <Link to={`/detail/${props.id}`}>
+                <HoverableLink href={`/detail/${props.id}`}>
                     Changing sate before saving to the database in Rails
-                </Link>
+                </HoverableLink>
             </h3>
             <p className={styles.brief}>
                 Changing sate before saving to the database in RailsChanging

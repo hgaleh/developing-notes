@@ -1,6 +1,6 @@
 .detailContainer {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 346px;
     @media(max-width: 640px) {
         & {
             grid-template-columns: 1fr;
@@ -29,6 +29,13 @@
         .profile {
             background-color: #191E25;
             border-radius: var(--radius);
+            display: grid;
+            padding: var(--su-4) !important;
+            padding-top: 0;
+            border-width: 0;
+            border-top-width: 32px;
+            border-top-color: #16978e;
+            border-style: solid;
         }
     }
 }

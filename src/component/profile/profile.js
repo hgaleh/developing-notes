@@ -1,5 +1,6 @@
 import { SocialNetworks } from '../social-networks/social-networks';
 import styles from './profile.module.scss';
+import { Button } from '../button/button';
 
 export const Profile = () => {
     return <header className={styles.profile}>
@@ -9,7 +10,7 @@ export const Profile = () => {
         </img>
       </div>
       <div className={styles['follow-me']}>
-        <button>Follow</button>
+        <Button>Follow</Button>
       </div>
     </div>
     <div className={styles['profile-middle']}>

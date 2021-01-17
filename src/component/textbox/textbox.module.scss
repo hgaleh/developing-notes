@@ -1,0 +1,18 @@
+.textbox {
+    --border-width: 1px;
+    line-height: var(--lh-base);
+    padding: calc(0.5em - var(--border-width)) 0.5em;
+    font-family: inherit;
+    font-size: var(--fs-base);
+    width: 100%;
+    outline: 0;
+    border-color: var(--form-border-hover);
+    background-color: var(--form-bg);
+    border: var(--border-width) solid var(--form-border);
+    color: var(--body-color);
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: var(--radius);
+    transition: all var(--transition-props);
+    margin: 0;
+}

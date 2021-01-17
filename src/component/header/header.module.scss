@@ -3,14 +3,26 @@
     top: 0px;
     left: 0px;
     right: 0px;
+    height: var(--header-height);
+    background-color: var(--base-10);
+    display: flex;
 
     .innerContainer {
         width: var(--site-width);
         margin: auto;
+        display: grid;
+        grid-template-columns: 50px 420px auto 121px repeat(3, 40px);
+        column-gap: 10px;
+        align-items: center;
 
         .buttonIcon {
             color: var(--base-100);
             background-color: var(--bg);
+            height: 40px;
+        }
+
+        .button {
+            grid-column-start: 4;
         }
     }
 }

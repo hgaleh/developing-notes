@@ -1,4 +1,3 @@
-import { HoverableLink } from '../hoverable/hoverable-link';
 import styles from './round-button.module.scss';
 
 export const RoundButton = (props) => {

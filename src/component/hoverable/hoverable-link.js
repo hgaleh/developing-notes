@@ -23,7 +23,7 @@ export class HoverableLink extends React.Component {
     render() {
         return <Link to={this.props.href} className={styles.title} onMouseEnter={this.onEnterd}
             onMouseLeave={this.onLeave}
-            style={this.state}>
+            style={this.state ? this.state : {color: 'unset'}}>
             {this.props.children}
         </Link>
     }

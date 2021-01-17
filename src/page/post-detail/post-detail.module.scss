@@ -13,6 +13,7 @@
     margin: auto;
     margin-top: 1em;
     margin-bottom: 2em;
+    color: var(--base-70) !important;
 
     .detailContent {
         background-color: var(--base-10);
@@ -31,11 +32,34 @@
             border-radius: var(--radius);
             display: grid;
             padding: var(--su-4) !important;
-            padding-top: 0;
+            padding-top: 0 !important;
             border-width: 0;
             border-top-width: 32px;
             border-top-color: #16978e;
             border-style: solid;
+
+            .prfileTop {
+                display: flex;
+                line-height: 40px;
+                height: 40px;
+                img {
+                    width: var(--su-8);
+                    height: var(--su-8);
+                    border-radius: 100%;
+                    position: relative;
+                    top: -18px;
+                    margin-right: 12px;
+                }
+            }
+
+            p > div:last-child {
+                color: var(--card-secondary-color);
+                font-size: var(--fs-base);
+            }
+
+            p > div:first-child {
+                font-size: var(--fs-xs);
+            }
         }
     }
 }

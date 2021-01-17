@@ -1,5 +1,7 @@
 import styles from './post-detail.module.scss';
 import { useParams } from 'react-router-dom';
+import { HoverableLink } from '../../component/hoverable/hoverable-link';
+import { HoverColor } from '../../component/hoverable/hover-color';
 
 export const PostDetail = () => {
     const { postId } = useParams();
@@ -25,25 +27,39 @@ export const PostDetail = () => {
         </article>
         <aside className={styles.sideBar}>
             <div className={styles.profile}>
-                <div>top</div>
-                <div>about-me</div>
-                <div>follow button</div>
+                <HoverableLink href="/detail/1" hoverColor={HoverColor.white}>
+                    <div className={styles.prfileTop}>
+                        <img src="../profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile"></img>
+                        <div>
+                            Hojjat Bakhtiyari
+                        </div>
+                    </div>
+                </HoverableLink>
+                <div>Frontend Developer at NICICO</div>
                 <div>
                     <p>
-                        WORK
-                        Frontend Web Developer at Chris Wray
+                        <div>WORK</div>
+                        <div>
+                            Frontend Web Developer at NICICO
+                        </div>
                     </p>
                     <p>
-                        LOCATION
-                        Pasco, WA
+                        <div>LOCATION</div>
+                        <div>
+                            Tehran, Iran
+                        </div>
                     </p>
                     <p>
-                        EDUCATION
-                        Western Governors University
+                        <div>EDUCATION</div>
+                        <div>
+                            Master of Computer Science
+                        </div>
                     </p>
                     <p>
-                        JOINED
-                        Jan 14, 2020
+                        <div>JOINED</div>
+                        <div>
+                            Jan 14, 2020
+                        </div>
                     </p>
                 </div>
             </div>

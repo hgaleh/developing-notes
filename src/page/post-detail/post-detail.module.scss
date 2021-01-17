@@ -54,12 +54,12 @@
                 }
             }
 
-            p > div:last-child {
+            .detail > div:last-child {
                 color: var(--card-secondary-color);
                 font-size: var(--fs-base);
             }
 
-            p > div:first-child {
+            .detail > div:first-child {
                 font-size: var(--fs-xs);
             }
         }

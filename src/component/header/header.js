@@ -2,6 +2,7 @@ import { Button } from '../button/button';
 import { HoverColor } from '../hoverable/hover-color';
 import { HoverableLink } from '../hoverable/hoverable-link';
 import { RoundButton } from '../round-button/round-button';
+import { BellIcon } from '../svg/bell-icon';
 import { DevIcon } from '../svg/dev-icon';
 import { MessageIcon } from '../svg/message-icon';
 import { Textbox } from '../textbox/textbox';
@@ -21,6 +22,9 @@ export const Header = () => {
             </div>
             <RoundButton>
                 <MessageIcon></MessageIcon>
+            </RoundButton>
+            <RoundButton>
+                <BellIcon></BellIcon>
             </RoundButton>
         </div>
     </header>

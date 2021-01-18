@@ -1,4 +1,4 @@
-import { ClickableIcon } from '../svg/clickable-icon';
+import { LinkIcon } from '../link-icon/link-icon';
 import { FacebookIcon } from '../svg/facebook-icon';
 import { GithubIcon } from '../svg/github-icon';
 import { InstagramIcon } from '../svg/instagram-icon';
@@ -25,18 +25,18 @@ export const Footer = () => {
                 <a href="https://twitter.com/hgaleh">Privacy Policy</a>
                 <a href="https://twitter.com/hgaleh">Terms of use Contact</a>
                 <div>
-                    <ClickableIcon href="https://twitter.com/hgaleh">
+                    <LinkIcon href="https://twitter.com/hgaleh">
                         <TwitterIcon></TwitterIcon>
-                    </ClickableIcon>
-                    <ClickableIcon href="https://www.facebook.com/hojjat.bkh">
+                    </LinkIcon>
+                    <LinkIcon href="https://www.facebook.com/hojjat.bkh">
                         <FacebookIcon></FacebookIcon>
-                    </ClickableIcon>
-                    <ClickableIcon href="https://github.com/hgaleh">
+                    </LinkIcon>
+                    <LinkIcon href="https://github.com/hgaleh">
                         <GithubIcon></GithubIcon>
-                    </ClickableIcon>
-                    <ClickableIcon href="https://www.instagram.com/h.bakhtiyarikiya">
+                    </LinkIcon>
+                    <LinkIcon href="https://www.instagram.com/h.bakhtiyarikiya">
                         <InstagramIcon></InstagramIcon>
-                    </ClickableIcon>
+                    </LinkIcon>
                 </div>
             </nav>
             <hr></hr>

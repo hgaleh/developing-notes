@@ -3,7 +3,7 @@ import { CakeIcon } from '../svg/cake-icon';
 import { GithubIcon } from '../svg/github-icon';
 import { LinkedinIcon } from '../svg/linkedin-icon';
 import { LocationIcon } from '../svg/location-icon';
-import { ClickableIcon } from '../svg/clickable-icon';
+import { LinkIcon } from '../link-icon/link-icon';
 
 export const SocialNetworks = () => {
     return <div className={styles['social-network']}>
@@ -17,12 +17,12 @@ export const SocialNetworks = () => {
             <time dateTime="2020-08-23T02:33:50Z">Aug 23, 2020</time>
         </span>
         <span>
-            <ClickableIcon href="https://github.com/hgaleh">
+            <LinkIcon href="https://github.com/hgaleh">
                 <GithubIcon></GithubIcon>
-            </ClickableIcon>
-            <ClickableIcon href="https://www.linkedin.com/in/hojjatollah-bakhtiyari-kiya-391009100/">
+            </LinkIcon>
+            <LinkIcon href="https://www.linkedin.com/in/hojjatollah-bakhtiyari-kiya-391009100/">
                 <LinkedinIcon></LinkedinIcon>
-            </ClickableIcon>
+            </LinkIcon>
         </span>
     </div>
 }

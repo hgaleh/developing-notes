@@ -5,16 +5,17 @@
     right: 0px;
     height: var(--header-height);
     background-color: var(--base-10);
-    display: flex;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .innerContainer {
-        width: var(--site-width);
-        margin: auto;
-        display: grid;
-        grid-template-columns: 50px 420px auto 121px repeat(3, 40px);
-        column-gap: 10px;
+    .headerContainer {
+
+        display: flex;
         align-items: center;
+        justify-content: center;
+        width: var(--site-width);
 
         .buttonIcon {
             color: var(--base-100);
@@ -22,8 +23,90 @@
             height: 40px;
         }
 
-        .button {
-            grid-column-start: 4;
+        .textbox {
+            width: 420px;
+            margin: 0 1rem;
+        }
+
+        .rightSide {
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+
+            .button {
+                grid-column-start: 4;
+                display: flex;
+                align-items: center;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+            }
+
+            .hoverZone {
+                height: 56px;
+                width: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                div[role="menu"] {
+                    transition: opacity 250ms, transform 250ms;
+                    transform: rotateX(15deg);
+                    transform-origin: top;
+                    transform-style: preserve-3d;
+                    text-rendering: optimizespeed;
+                    visibility: hidden;
+                    opacity: 0;
+                    width: 0;
+                }
+
+                &:hover {
+                    div[role="menu"] {
+                        position: absolute;
+                        top: 100%;
+                        right: 0;
+                        width: 238px;
+                        background-color: #1a2634;
+                        border-radius: 5px;
+                        border-color: white;
+                        border-style: solid;
+                        border-width: 2px;
+                        box-shadow: 4px 4px 0 var(--card-color);
+                        visibility: visible;
+                        opacity: 1;
+                        transform: rotate3d(1, 0, 0, 0);
+
+                        & > * {
+                            padding: 0.5rem;
+                        }
+                    }
+
+                    .profile {
+                        border-width: 3px;
+                        border-color: #00000057;
+                        border-style: solid;
+                    }
+                }
+
+                .profile {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & > img {
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 100%;
+                    }
+                }
+            }
         }
     }
 }

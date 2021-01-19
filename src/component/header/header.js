@@ -10,22 +10,58 @@ import styles from './header.module.scss';
 
 export const Header = () => {
     return <header className={styles.headerClass}>
-        <div className={styles.innerContainer}>
+        <div className={styles.headerContainer}>
             <HoverableLink hoverColor={HoverColor.gray} href="/detail/1">
                 <div className={styles.buttonIcon}>
                     <DevIcon></DevIcon>
                 </div>
             </HoverableLink>
-            <Textbox></Textbox>
-            <div className={styles.button}>
-                <Button>Write a post</Button>
+            <div className={styles.textbox}>
+                <Textbox></Textbox>
             </div>
-            <RoundButton>
-                <MessageIcon></MessageIcon>
-            </RoundButton>
-            <RoundButton>
-                <BellIcon></BellIcon>
-            </RoundButton>
+            <div className={styles.rightSide}>
+                <div className={styles.button}>
+                    <Button>Write a post</Button>
+                </div>
+                <div className={styles.icons}>
+                    <RoundButton>
+                        <MessageIcon></MessageIcon>
+                    </RoundButton>
+                    <RoundButton>
+                        <BellIcon></BellIcon>
+                    </RoundButton>
+                </div>
+                <div className={styles.hoverZone}>
+                    <div className={styles.profile}>
+                        <img src="./profile-photo.jpeg"></img>
+                    </div>
+                    <div role="menu">
+                        <div>
+                            Hojjat Bakhtiyari
+                        <div>
+                                @h.galeh
+                        </div>
+                        </div>
+                        <hr></hr>
+                        <div>
+                            Dashboard
+                    </div>
+                        <div>
+                            Write a post
+                    </div>
+                        <div>
+                            Reading list
+                    </div>
+                        <div>
+                            Settings
+                    </div>
+                        <hr></hr>
+                        <div>
+                            Sign Out
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 }

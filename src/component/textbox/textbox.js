@@ -2,5 +2,5 @@ import styles from './textbox.module.scss';
 
 export const Textbox = () => {
     return <input className={styles.textbox} type="text" name="q"
-    placeholder="Search..." autocomplete="off" aria-label="search"></input>;
+    placeholder="Search..." autoComplete="off" aria-label="search"></input>;
 };

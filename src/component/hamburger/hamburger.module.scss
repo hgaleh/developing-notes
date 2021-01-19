@@ -1,0 +1,30 @@
+.hamburgerButton {
+
+    color: #6e767f;
+    display: none;
+
+    @media(max-width: 640px) {
+        display: block;
+    }
+
+    .hamburgerContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f9fafa;
+        opacity: 0.5;
+
+        .menu {
+            float: left;
+            height: 100vh;
+            width: 250px;
+            background-color: #1a2634;
+            opacity: 1;
+        }
+    }
+}

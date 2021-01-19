@@ -8,10 +8,14 @@ import { MessageIcon } from '../svg/message-icon';
 import { Textbox } from '../textbox/textbox';
 import styles from './header.module.scss';
 import { Link } from 'react-router-dom';
+import { Hamburger } from '../hamburger/hamburger';
 
 export const Header = () => {
     return <header className={styles.headerClass}>
         <div className={styles.headerContainer}>
+            <div className={styles.hamburger}>
+                <Hamburger></Hamburger>
+            </div>
             <HoverableLink hoverColor={HoverColor.gray} href="/detail/1">
                 <div className={styles.buttonIcon}>
                     <DevIcon></DevIcon>
@@ -68,7 +72,7 @@ export const Header = () => {
                             </div>
                         </div>
                         <div className={styles.hoverable}>
-                                Sign Out
+                            Sign Out
                         </div>
                     </div>
                 </div>

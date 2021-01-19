@@ -17,15 +17,27 @@
         justify-content: center;
         width: var(--site-width);
 
+        .hamburger {
+            margin-left: 1rem;
+        }
+
         .buttonIcon {
             color: var(--base-100);
             background-color: var(--bg);
             height: 40px;
+
+            @media(max-width: 640px) {
+                display: none;
+            }
         }
 
         .textbox {
             width: 420px;
             margin: 0 1rem;
+
+            @media(max-width: 640px) {
+                display: none;
+            }
         }
 
         .rightSide {

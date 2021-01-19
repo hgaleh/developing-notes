@@ -7,6 +7,7 @@ import { DevIcon } from '../svg/dev-icon';
 import { MessageIcon } from '../svg/message-icon';
 import { Textbox } from '../textbox/textbox';
 import styles from './header.module.scss';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return <header className={styles.headerClass}>
@@ -37,28 +38,38 @@ export const Header = () => {
                     </div>
                     <div role="menu">
                         <div>
-                            Hojjat Bakhtiyari
-                        <div>
-                                @h.galeh
+                            <div className={`${styles.hoverable} ${styles.top}`}>
+                                Hojjat Bakhtiyari
+                                <div className={styles.userName}>
+                                    @h.galeh
+                                </div>
+                            </div>
                         </div>
+                        <div className={styles.options}>
+                            <div className={styles.hoverable}>
+                                <Link to="/detail/1">
+                                    Dashboard
+                                </Link>
+                            </div>
+                            <div className={styles.hoverable}>
+                                <Link to="/detail/1">
+                                    Write a post
+                                </Link>
+                            </div>
+                            <div className={styles.hoverable}>
+                                <Link to="/detail/1">
+                                    Reading list
+                                </Link>
+                            </div>
+                            <div className={styles.hoverable}>
+                                <Link to="/detail/1">
+                                    Settings
+                                </Link>
+                            </div>
                         </div>
-                        <hr></hr>
-                        <div>
-                            Dashboard
-                    </div>
-                        <div>
-                            Write a post
-                    </div>
-                        <div>
-                            Reading list
-                    </div>
-                        <div>
-                            Settings
-                    </div>
-                        <hr></hr>
-                        <div>
-                            Sign Out
-                    </div>
+                        <div className={styles.hoverable}>
+                                Sign Out
+                        </div>
                     </div>
                 </div>
             </div>

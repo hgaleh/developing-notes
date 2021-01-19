@@ -62,6 +62,41 @@
                     visibility: hidden;
                     opacity: 0;
                     width: 0;
+                    background-color: #1a2634;
+                    color: #dde0e2;
+                    font-family: var(--ff-sans-serif);
+                    cursor: pointer;
+                    user-select: none;
+                    line-height: 40px;
+
+                    .hoverable, .hoverable:active, .hoverable:visited {
+                        padding-left: 1rem;
+                        margin: 2px;
+                        color: #dde0e2;
+
+                        &:hover {
+                            background-color: #f9fafa0d;
+                            color: #9896ff;
+                            border-radius: 4px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #dde0e2;
+                        }
+                    }
+
+                    .top {
+                        .userName {
+                            color: #747c85;
+                        }
+                    }
+
+                    .options {
+                        border: #2e3a48;
+                        border-style: solid;
+                        border-width: 1px;
+                    }
                 }
 
                 &:hover {
@@ -79,10 +114,6 @@
                         visibility: visible;
                         opacity: 1;
                         transform: rotate3d(1, 0, 0, 0);
-
-                        & > * {
-                            padding: 0.5rem;
-                        }
                     }
 
                     .profile {

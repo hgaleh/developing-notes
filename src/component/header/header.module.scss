@@ -16,9 +16,18 @@
         align-items: center;
         justify-content: center;
         width: var(--site-width);
+        max-width: 100%;
 
         .hamburger {
             margin-left: 1rem;
+            display: none;
+            margin-right: auto;
+
+            @media(max-width: 760px) {
+                & {
+                    display: block;
+                }
+            }
         }
 
         .buttonIcon {
@@ -26,7 +35,7 @@
             background-color: var(--bg);
             height: 40px;
 
-            @media(max-width: 640px) {
+            @media(max-width: 760px) {
                 display: none;
             }
         }
@@ -34,6 +43,7 @@
         .textbox {
             width: 420px;
             margin: 0 1rem;
+            margin-right: auto;
 
             @media(max-width: 640px) {
                 display: none;
@@ -41,13 +51,11 @@
         }
 
         .rightSide {
-            margin-left: auto;
             display: flex;
             justify-content: space-between;
             justify-items: center;
 
             .button {
-                grid-column-start: 4;
                 display: flex;
                 align-items: center;
                 overflow: hidden;

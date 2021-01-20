@@ -1,11 +1,6 @@
 .hamburgerButton {
 
     color: #6e767f;
-    display: none;
-
-    @media(max-width: 640px) {
-        display: block;
-    }
 
     .hamburgerContainer {
         position: fixed;

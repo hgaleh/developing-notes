@@ -21,10 +21,60 @@
 
         .menu {
             height: inherit;
+            overflow-y: auto;
             float: left;
             width: 250px;
             background-color: #1a2634;
             opacity: 1;
+            position: relative;
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                border-bottom-style: solid;
+                border-width: 1px;
+
+                & * {
+                    color: #f9fafa;
+                }
+
+                h2 {
+                    font-weight: 700 !important;
+                    font-size: 18px !important;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .body {
+                ul {
+                    transition: 'background' cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms, color cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+                    list-style-type: none;
+                    line-height: 3rem;
+                    padding-left: 0;
+
+                    li {
+                        padding-left: 1rem;
+                        border-radius: 4px;
+
+
+                        &:hover {
+                            background-color: #f9fafa0d;
+                        }
+
+                        svg {
+                            vertical-align: sub;
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+                    * {
+                        color: #dde0e2;
+                    }
+                }
+            }
+
         }
 
         .out {

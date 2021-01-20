@@ -38,7 +38,7 @@ export const Header = () => {
                 </div>
                 <div className={styles.hoverZone}>
                     <div className={styles.profile}>
-                        <img src="./profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile"></img>
+                        <img src="/profile-photo.jpeg" alt="Hojjat Bakhtiyari Profile"></img>
                     </div>
                     <div role="menu">
                         <div>
